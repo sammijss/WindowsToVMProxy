@@ -1,0 +1,23 @@
+###################################################################################################
+#------------------------------------------UDP PROXY----------------------------------------------#
+# Problem:											  #
+# If you are using VM machine on Windows machine and running an UDP application on VM machine     #
+# and that application is receiving packets from another remote machine.			  #
+#												  #
+# Solution:											  #
+# There are couple of things to take care this problem:						  #
+# 1: Add 'inbound' rule in your Windows machine firewall for VM application ports.		  #
+# 2: Add PORT Forwading rules in VM.								  #
+# 3: Check VM firewall.										  #
+# 4: Use windows-to-vm-proxy.									  #
+#												  #
+# windows-to-vm-proxy:										  #
+# After the above configuration you are still facing the problem then use this proxy		  #
+# application. It will solve your problem.							  #
+#												  #
+# How to use?											  #
+# 1: Checkout the code on CygWin client (MobaXTerm)						  #
+# 2: Do 'make'											  #
+# 3: Configure IP address and PORT number in the config.cfg file				  #
+# 4: Run the 'windowstovmproxy.exe'								  #
+###################################################################################################
